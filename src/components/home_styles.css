@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Tilt+Prism&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Tilt+Prism&display=swap');
+html, .body, #root {
+  height: 100%;
+}
+.body{
+    font-family: 'Vina Sans', cursive;
+   overflow-y: auto;
+   background-color: #C3D3E6;
+}
+
+.maxw-900-marg-10{
+    max-width: 900px;
+    margin: auto 10px;
+}
+.dropdown-div{
+    display: none;
+}
+h1{
+    margin-left: 3%;
+}
+h2{
+    margin-left: 5%;
+    max-width: 150px;
+    font-size: 25px;
+    text-align: left;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+.buttons-up{
+    max-width: 600px;
+    display: inline;
+    align-items: center;
+   
+}
+
+.button-icon{
+    margin: auto 10px;
+    color:rgb(220, 135, 236);
+    background-color: transparent;
+    border: 1px transparent solid;
+}
+.button-icon:hover{
+    color: rgb(231, 50, 50);
+}
+.body .banner{
+    
+    background-image: url("./images/discofondo.png");
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover;
+     background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    padding-top: 2rem;
+    height: 30vh;
+    z-index: 10;
+    max-width: 90%;
+    left: 0;
+    right: 0;
+    margin: 3% 5%;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+.body .banner:hover{
+    box-shadow: 0 0 20px #515585;
+    border-radius: 10px;
+    background-image: url("./images/albumcover.jpg");
+  }
+
+.body .center-segments{
+   
+    margin: 8% 5%;
+    max-width: 90%;
+    font-size: 30px;
+    margin-bottom: 10%;
+}
+.title2{
+    max-width: 80px;
+    font-size: 20px;
+}
+.span-segments{
+    display: block;
+}
+.div-segments .fa-solid{
+    color: rgb(98, 98, 231);
+    margin-bottom: 5%;
+
+}
+.div-segments .fa-solid:hover{
+    color: rgb(67, 175, 67);
+    box-shadow: 0 0 20px #5f5e5e;
+    border-radius: 10px;
+}
+.section-courier .center-courier{
+
+    display: grid;
+    grid-template-columns: auto auto auto; /* dos columnas de igual tamaño */
+    gap: 5%; /* espacio entre las celdas */
+    font-size: 15px;
+    margin-bottom: 10%;
+}
+.section-courier .image-courier{
+    max-width: 70%;
+    max-height: 68%;
+    border: solid 1px transparent;
+    border-radius: 10px;
+    transition: filter 0.3s ease-in-out;
+}
+.section-courier .image-courier:hover{
+    filter: opacity(70%);
+    box-shadow: 0 0 20px #515585;
+    border-radius: 10px;
+}
+.body .section-courier{
+    height: 40%;
+    max-width: 90%;
+    margin: auto 5%;
+}
+.view-all{
+    color: rgb(158, 153, 153);
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    margin-right: 5%;
+}
+.section-courier .header-courier{
+    margin-bottom: 5%;
+}
+.header-courier .view-all:hover{
+    color: rgb(152, 152, 233);
+}
+.body .section-album{
+    height: 100%;
+    max-width: 90%;
+    bottom: 0;
+   
+}
+
+.section-album .center-album{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* dos columnas de igual tamaño */
+    grid-gap: 10%;
+     /* espacio entre las celdas */
+     padding-bottom: 10%;
+}
+.section-album .image-container{
+    width: 50%;
+}
+.section-album .text-container {
+    width: 50%;
+    overflow-wrap: break-word;
+
+}
+.section-album .div-album-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+    
+   
+  }
+
+.section-album .image-album{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+
+    border-radius: 10px;
+
+    margin-left: 7%;
+}
+.center-slider{
+    width: 100%;
+
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+.section-album .text-album{
+    font-family: 'Castoro Titling', cursive;
+
+    font-size: clamp(8px, 2vw, 30px);
+    color: #0e910e;
+}
+.section-album .text-album:hover{
+    color: rgb(220, 135, 236);
+}
+.center-slider ul{
+    padding: 0;
+    width: 400%;
+    display: flex;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+.center-slider li{
+    list-style: none;
+    width: 100%;
+}
+.center-slider .center-album{
+    width: 100%;
+
+}
+
+.section-album .image-album:hover{
+    filter: opacity(70%);
+    box-shadow: 0 0 20px #515585;
+    border-radius: 10px;
+}
+.footer{
+    padding: 2%;
+    height: 100%;
+    background-color: white;
+    background-color: #f1d8b2;
+}
+.footer .footer-col{
+    width: 20%;
+    height: 100%;
+    overflow-y: auto;
+}
+.footer .footer-col-center{
+    width: 20%;
+    height: 100%;
+    bottom: 30px;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.footer .button-footer{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: rgb(220, 135, 236);
+
+}
+.footer .button-footer:hover{
+    color: rgb(231, 50, 50);
+}
+.play-center{
+    border: none;
+    background-color: transparent;
+    font-size: 40px;
+    color: #2a4ab6;
+}
+.play-center:hover{
+    color: rgb(67, 175, 67);
+}
+.one .span-active{
+    display: none;
+}
+.one:hover .span-active{
+    display: block;
+    font-size: 12px;
+}
+.two .span-active{
+    display: none;
+}
+.two:hover .span-active{
+    display: block;
+    font-size: 12px;
+}
+.four .span-active{
+    display: none;
+}
+.four:hover .span-active{
+    display: block;
+    font-size: 12px;
+}
+.five .span-active{
+    display: none;
+}
+.five:hover .span-active{
+    display: block;
+    font-size: 12px;
+}
+.play-center .fa-circle-play{
+    background: linear-gradient(to right, #ab86f0, #b36dec, #7b4ce7, #3f55d1);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.carousel-item-margin{
+    margin-bottom: 15%;
+}
+.button-transparent{
+    border: transparent;
+    background-color: transparent;
+}
+.link-back{
+    color: rgb(35, 35, 236);
+    text-decoration: underline rgb(35, 35, 236);
+}
+@media screen and (min-width: 768px) {
+    header .fa-solid{
+        font-size: 25px;
+    }
+    .dropdown-div{
+        display: block;
+    }
+    button.dropdown-button{
+        background-color: transparent;
+        color: rgb(220, 135, 236);
+        border: 1px solid transparent;
+    }
+    button.dropdown-button:hover{
+        background-color: transparent;
+        color: rgb(220, 135, 236);
+        border: 1px solid transparent;
+      
+    }
+    button.dropdown-button:focus{
+        background-color: transparent;
+        color: rgb(220, 135, 236);
+        border: 1px solid transparent;
+      
+    }
+    button.dropdown-button:active{
+        background-color: transparent;
+        color: rgb(220, 135, 236);
+        border: 1px solid transparent;
+      
+    }
+   
+      .dropdown-button + .dropdown-menu {
+        background-color: lightblue;
+        border: transparent;
+        
+        margin: 10%;
+      }
+      .dropdown-button + .dropdown-menu .dropdown-item {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* dos columnas de igual tamaño */
+        }
+      .dropdown-button + .dropdown-menu .fa-solid{
+        margin-right: 10%;
+      }
+      
+    .body .banner{
+        height: 60vh;
+    }
+    .banner .title2{
+        max-width: 150px;
+        font-size: 50px;
+    }
+
+    .div-segments .fa-solid{
+        font-size: 400%;
+        
+    }
+
+    .body .center-segments{
+        margin-bottom: 10%;
+        font-size: 25px;
+    }
+      .body .section-courier{
+        position: relative;
+      }
+      .section-courier .header-courier{
+        font-size: 25px;
+        margin-top: 5%;
+        
+      }
+      .section-album .header-album{
+        font-size: 25px;
+        margin-top: 5%;
+      }
+      .view-all{
+        font-size: 25px;
+      }
+      .section-courier .center-courier{
+        font-size: 30px;
+
+      }
+      .section-courier .image-courier{
+        max-width: 85%;
+        max-height: 83%;
+
+      }
+
+
+      .section-album .center-album{
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* dos columnas de igual tamaño */
+        grid-gap: 10%;
+         /* espacio entre las celdas */
+         padding-bottom: 0%;
+         
+    }
+      .section-album .image-album{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    
+    
+        border-radius: 10px;
+    
+        margin-left: 7%;
+        }
+        .section-album .album-item{
+            margin-bottom: 5%;
+          }
+    .body .footer{
+        display: none;
+    }
+    .carousel-item-margin{
+        margin-bottom: 5%;
+    }
+    
+}
