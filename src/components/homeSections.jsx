@@ -7,7 +7,7 @@ import {Carousel} from 'react-bootstrap';
 import bruno from './images/bruno.jpg'
 import weeknd from './images/weeknd.jpg'
 import alan from './images/alan.jpg'
-const endpoint = 'https://prueba-publicar.azurewebsites.net/api';
+const endpoint = 'https://musicbackenddeploy-production.up.railway.app/api';
 
 const HomeSections = ({handleAlbum}) => {
   const { handleAlbumClick, handleCloseHome} = handleAlbum;

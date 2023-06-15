@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Container, Button, Form, Carousel } from "react-bootstrap";
 import axios from "axios";
 
-const endpoint = 'https://prueba-publicar.azurewebsites.net/api'
+const endpoint = 'https://musicbackenddeploy-production.up.railway.app/api'
   
 function BuscarArtista({onSelectArtistaId}) { 
 

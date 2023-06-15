@@ -4,7 +4,7 @@ import { Container, Row, Col, Image, Carousel } from "react-bootstrap";
 import axios from "axios";
 
 
-const endpoint = 'https://prueba-publicar.azurewebsites.net/api';
+const endpoint = 'https://musicbackenddeploy-production.up.railway.app/api';
 
 function DetalleArtista({ artistaId }) {
   const { selectedArtistaId, handleShowSearch, handleArtistaClick, handleAlbumClick} = artistaId;
