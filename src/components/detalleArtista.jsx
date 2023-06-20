@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col, Image, Carousel } from "react-bootstrap";
-
+import Loading from "./loading";
 import axios from "axios";
 
 
@@ -15,7 +15,6 @@ useEffect(() => {
 const fetchArtista = async () => {
 try {
 const response = await axios.get(`${endpoint}/detalle-artista/${selectedArtistaId}`);
-console.log(response.data);
 setArtista(response.data.artist);
 } catch (error) {
 console.error(error);
@@ -25,7 +24,9 @@ fetchArtista();
 }, [selectedArtistaId]);
 
 if (!artista) {
-return <div className="text-danger">Cargando <i className="fa-solid fa-spinner fa-spin-pulse"></i></div>;
+return   <div className="d-flex justify-content-center">
+<Loading />
+</div>
 }
 const topTracksSorted = [...artista.top_tracks].sort((a, b) => b.popularity - a.popularity);
 return (

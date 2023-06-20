@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
-
+import Loading from "./loading";
 import axios from "axios";
 
 
@@ -15,7 +15,6 @@ useEffect(() => {
 const fetchAlbum = async () => {
 try {
 const response = await axios.get(`${endpoint}/detalle-album/${selectedAlbumId}`);
-console.log(response.data);
 setAlbum(response.data.album);
 } catch (error) {
 console.error(error);
@@ -25,7 +24,9 @@ fetchAlbum();
 }, [selectedAlbumId]);
 
 if (!album) {
-return <div className="text-danger">Cargando <i className="fa-solid fa-spinner fa-spin-pulse"></i></div>;
+return   <div className="d-flex justify-content-center">
+<Loading />
+</div>
 }
 
 return (

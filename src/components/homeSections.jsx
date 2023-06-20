@@ -7,18 +7,20 @@ import {Carousel} from 'react-bootstrap';
 import bruno from './images/bruno.jpg'
 import weeknd from './images/weeknd.jpg'
 import alan from './images/alan.jpg'
+import Loading from './loading';
 const endpoint = 'https://musicbackenddeploy-production.up.railway.app/api';
 
 const HomeSections = ({handleAlbum}) => {
   const { handleAlbumClick, handleCloseHome} = handleAlbum;
     const [albums, setAlbums] = useState([]);
-
+    const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
+      setIsLoading(true);
       fetch(`${endpoint}/top-albums`)
         .then(response => response.json())
         .then(data => {setAlbums(data.albums);
-          console.log(data.albums);});
-         
+          });
+          setIsLoading(false);
     }, []);
   return (
     <div>
@@ -85,6 +87,9 @@ const HomeSections = ({handleAlbum}) => {
     <span className='span-view'>View all <i className="fa-solid fa-greater-than"></i></span>
     </Col>
   </Row>
+  {isLoading ? (
+    <Loading />
+    ) : (
         <Carousel className='center-slider' interval={5000} 
           prevIcon={<FontAwesomeIcon icon={faCircleArrowLeft} size="2x" color="#a6bce2"/>} 
           nextIcon={<FontAwesomeIcon icon={faCircleArrowRight} size="2x" color="#a6bce2"/>}
@@ -118,7 +123,7 @@ const HomeSections = ({handleAlbum}) => {
         </Carousel.Item>
       ))}
     </Carousel>
-
+    )}
     </Container>
     </div>
   )

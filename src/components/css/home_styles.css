@@ -8,7 +8,7 @@ html, .body, #root {
 .body{
     font-family: 'Vina Sans', cursive;
    overflow-y: auto;
-   background-color: #C3D3E6;
+   background: linear-gradient(43deg, rgb(179, 217, 255) 0%, rgb(102, 231, 255) 46%, rgb(179, 255, 252) 100%);
 }
 
 .maxw-900-marg-10{
@@ -46,7 +46,7 @@ h2{
 }
 .body .banner{
     
-    background-image: url("./images/discofondo.png");
+    background-image: url("../images/discofondo.png");
     color: white;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@ h2{
 .body .banner:hover{
     box-shadow: 0 0 20px #515585;
     border-radius: 10px;
-    background-image: url("./images/albumcover.jpg");
+    background-image: url("../images/albumcover.jpg");
   }
 
 .body .center-segments{

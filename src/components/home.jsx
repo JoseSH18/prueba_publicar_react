@@ -1,4 +1,4 @@
-import './home_styles.css';
+import './css/home_styles.css';
 
 import React, { useState } from 'react';
 
