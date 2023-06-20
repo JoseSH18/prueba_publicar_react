@@ -54,6 +54,7 @@ const Home = () => {
   const goHome = () => {
     handleCloseSearch();
     setSelectedArtistaId(null);
+    setSelectedAlbumId(null);
     handleShowHome();
   };
 

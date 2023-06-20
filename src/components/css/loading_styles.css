@@ -26,10 +26,12 @@
   
   .loader .icon:nth-of-type(2) {
     animation-delay: calc(1 / 5 * var(--period));
+    color: blue;
   }
   
   .loader .icon:nth-of-type(3) {
     animation-delay: calc(2 / 5 * var(--period));
+    color: red;
   }
   
   @keyframes loader-bounce02 {
