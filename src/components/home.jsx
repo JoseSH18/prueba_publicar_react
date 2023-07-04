@@ -40,6 +40,7 @@ const Home = () => {
     handleCloseHome();
     handleShowSearch();
     setSelectedArtistaId(null);
+    setSelectedAlbumId(null);
   };
   const [selectedArtistaId, setSelectedArtistaId] = useState(null);
   const [selectedAlbumId, setSelectedAlbumId] = useState(null);
